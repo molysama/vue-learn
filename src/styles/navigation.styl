@@ -1,0 +1,46 @@
+
+
+/******************************************************************************/
+/*  NAVIGATION                                                                */
+/******************************************************************************/
+.navigation 
+    position: fixed
+    top: 200px
+    left: 0px
+img
+    margin-left: 50px
+    margin-bottom: 20px
+li 
+    position: relative
+    margin: 0 0 4px
+    font-family: 'armata', arial, helvetica, sans-serif
+    font-size: 13px	
+a 
+    position: relative
+    display: inline-block
+    padding: 0.3em .5em 0.3em
+    text-decoration: none
+    background-color: #ffffff
+    color: #888887
+    border-radius: 0 .4em .4em 0
+    outline: none
+    cursor: pointer
+    &:hover
+        background-color: #ffffff
+        color:#d82545
+        animation: li-in .3s
+        animation-fill-mode: forwards
+    &.nav-active
+        color #d82445
+        padding-left 1.2em
+        padding-right 1.2em
+span
+    padding-left: 10px
+    padding-right: 10px
+
+@keyframes li-in
+    from 
+        padding-left: .5em
+    to
+        padding-left: 1.2em
+        padding-right: 1.2em
