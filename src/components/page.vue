@@ -1,6 +1,6 @@
 <template>
 
-    <div>
+    <div class="page-body">
          <page_header/> 
          <page_banner/> 
          <page_content/> 
@@ -32,6 +32,11 @@ export default {
     
 </script>
 
-<style>
+<style lang="stylus" scoped>
+
+.page-body
+    margin: 0 auto
+    background: url("../assets/page/clouds.gif") repeat-x
+
     
 </style>

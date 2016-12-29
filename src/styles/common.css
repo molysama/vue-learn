@@ -24,13 +24,13 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, li, a {
 	display: block;
 }
 body {
 	line-height: 1;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 blockquote, q {
@@ -102,4 +102,7 @@ a:active
 {
 	width: 100%;
 	padding-top: 70px;
+}
+img {
+	border: none;
 }

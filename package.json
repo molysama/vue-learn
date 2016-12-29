@@ -12,6 +12,7 @@
     "test": "npm run unit && npm run e2e"
   },
   "dependencies": {
+    "element-ui": "^1.0.9",
     "stylus": "^0.54.5",
     "vue": "^2.1.0",
     "vue-router": "^2.1.1"
