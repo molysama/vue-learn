@@ -5,17 +5,17 @@
          <page_banner/> 
          <page_content/> 
          <page_footer/> 
-    
     </div>
 
 </template>
 
 <script>
 
-import page_header from './page/header'
-import page_banner from './page/banner'
-import page_content from './page/content'
-import page_footer from './page/footer'
+import page_header from './header'
+import page_banner from './banner'
+import page_content from './content'
+import page_footer from './footer'
+
 
 export default {
     data () {
@@ -32,11 +32,9 @@ export default {
     
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus" scoped >
 
 .page-body
     margin: 0 auto
-    background: url("../assets/page/clouds.gif") repeat-x
-
     
 </style>

@@ -4,6 +4,7 @@
             <ul>
                 <li v-for="(item, key) in items" >
                     <router-link 
+                        v-if="item.do"
                         :to="{ path: item.path }"
                         active-class="nav-active"
                         class="rounded">
@@ -15,12 +16,12 @@
 </template>
 <script>
 
-import settings from '../router_path.json'
+import settings from '../router_path.toml'
 
     export default {
         data () {
             return {
-                items: settings 
+                items: settings.path 
             }
         },
         methods: {

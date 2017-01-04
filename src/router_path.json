@@ -1,6 +1,0 @@
-[
-    {"title": "主页", "path": "/other", "do": true, "component": "other"},
-    {"title": "关于我们", "path": "/aboutUS", "do": true, "component": "Hello"},
-    {"title": "导航条", "path": "/learn-navigation", "do": true, "component": "LearnNavigation"},
-    {"title": "设置", "path": "/set", "do": false}
-]

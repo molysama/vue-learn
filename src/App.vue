@@ -4,20 +4,18 @@
     <hello></hello>-->
     <Navigation></Navigation>
     <router-view></router-view>
-    <page/>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
 import Navigation from './components/Navigation'
-import Page from './components/page'
+
+import mockTest from './mockTest'
 
 export default {
   name: 'app',
   components: {
-    Navigation,
-    Page
+    Navigation
   }
 }
 </script>

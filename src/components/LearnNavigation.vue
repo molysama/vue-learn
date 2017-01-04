@@ -1,29 +1,26 @@
 <template>
-    <div class="nav" >
+    <div class="nav" @click="myClick($event)" >
     </div>
 </template>
 
 <script>
     export default {
         
-        // data () {
-        //     return {
-        //         item: 'Hello World'
-        //     }
-        // },
-        // methods: {
-        //     doReload (callback) {
-        //         let _this = this
-        //         _this.apis = 'APIS'
-        //         callback()
-        //     },
-        //     myClick () {
-        //         let _this = this
-        //         _this.doReload(function(){
-        //             alert(_this.apis)
-        //         })
-        //     }
-        // },
+        data () {
+            return {
+                item: 'Hello World'
+            }
+        },
+        methods: {
+            doReload (callback) {
+                let _this = this
+                _this.apis = 'APIS'
+                callback()
+            },
+            myClick (e) {
+                alert(e.target)
+            }
+        }
     }
 </script>
 

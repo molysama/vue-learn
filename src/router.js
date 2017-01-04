@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import settings from './router_path'
+// import settings from './router_path'
+import settings from './router_path.toml'
 
 Vue.use(VueRouter)
 
 const routes = []
-settings.forEach(set => { 
+settings.path.forEach(set => { 
   if(!set.do){
     return; 
   }
@@ -14,6 +15,7 @@ settings.forEach(set => {
 })
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 module.exports = router

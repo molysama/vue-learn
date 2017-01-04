@@ -1,73 +1,39 @@
 <template>
 <div class="header" >
-    <div class="container">
-    <div><a href="#" class="logo"></a></div>
-    <ul class="nav">
-        <li><a href="">首页</a></li>
-        <li><a href="">培训课程</a></li>
-        <li><a href="">优秀成员</a></li>
-        <li><a href="">课程疑问</a></li>
-        <li><a href="">职业生涯</a></li>
-        <li><a href="">学员社区</a></li>
-        <li><a href="">官方博客</a></li>
-        <li><a href="">学院地址</a></li>
-    </ul>
-    </div>
+    <el-menu theme="dark" default-active="1" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+      <el-menu-item index="1">LOGO</el-menu-item>
+      
+
+      <el-submenu :offset="6" index="2">
+        <template slot="title">技术应用</template>
+        <el-menu-item index="2-1">选项1</el-menu-item>
+        <el-menu-item index="2-2">选项2</el-menu-item>
+        <el-menu-item index="2-3">选项3</el-menu-item>
+        <el-menu-item index="2-4">选项4</el-menu-item>
+        <el-menu-item index="2-5">选项5</el-menu-item>
+      </el-submenu>
+      <el-menu-item index="3">相关产品</el-menu-item>
+      <el-menu-item index="4">联系我们</el-menu-item>
+      <el-menu-item index="5">FAQ</el-menu-item>
+      
+    </el-menu>
 </div>
 
 </template>
 
 <script>
 
+import axios from 'axios'
+
 export default {
-    
+   methods: {
+     handleSelect(key, keyPath) {
+        axios.get('/user')
+             .then(res => {
+                alert(JSON.stringify(res.data))
+             })
+             .catch(err => console.log(err))
+     }
+   }  
 }
 </script>
-
-<style scoped lang="stylus" >
-
-.header 
-    overflow: hidden
-    padding-top: 45px
-
-.container
-    position: relative
-    width: 1000px
-    margin: 0 auto
-    
-.logo
-    float: left
-    background: url("../../assets/page/logo.png")
-    width: 220px
-    height: 54px
-    
-.nav 
-    float: left
-    height: 54px
-    width: 780px
-    background-color: #393838
-    
-li 
-    float: left
-    
-    a 
-        font-size: 12px
-        width: 86px
-        height: 54px
-        line-height: 54px
-        text-align: center
-        color: #ccc
-        text-decoration: none
-        float: left
-        
-        &:hover 
-            color: #fff
-            
-    &.active 
-        background-color: #585656
-        a 
-            color: #fff
-
-    
-    
-</style>

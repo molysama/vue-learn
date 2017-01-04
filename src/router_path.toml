@@ -1,0 +1,23 @@
+[[path]]
+title = "PAGE"
+path = "/page"
+component = "page/index"
+do = true
+
+[[path]]
+title = "FLEX"
+path = "/flex"
+# component = "flex/index"
+# component = "flex/second"
+component = "flex/third"
+do = true
+
+[[path]]
+title = "导航条 >"
+path = "/learn-navigation"
+component = "LearnNavigation"
+do = true
+
+[[path]]
+title = "待定"
+do = false
