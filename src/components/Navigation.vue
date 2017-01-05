@@ -16,24 +16,13 @@
 </template>
 <script>
 
-import settings from '../router_path.toml'
+import {navs} from '../config/router_path.toml'
 
     export default {
         data () {
             return {
-                items: settings.path 
+                items: navs
             }
-        },
-        methods: {
-            // aClick (index) {
-            //     Object.keys(this.items).map(key => {
-            //         if(key == index) {
-            //             this.items[key].isActive = true
-            //         }else {
-            //             this.items[key].isActive = false
-            //         }
-            //     })
-            // }
         }
     }
     

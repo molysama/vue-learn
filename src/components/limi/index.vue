@@ -2,10 +2,10 @@
 <template>
 
   <div class="body" >
-    <Limi_header class="header" />
-    <Limi_banner class="banner" />
-    <Limi_content class="content" />
-    <Limi_footer class="footer" />
+    <Limi-header class="header" />
+    <Limi-banner class="banner" />
+    <Limi-content class="content" />
+    <Limi-footer class="footer" />
   </div>
 
 
@@ -13,15 +13,7 @@
 
 <script>
 
-import Limi_header from './header'
-import Limi_content from './content'
-import Limi_banner from './banner'
-import Limi_footer from './footer'
-
 export default {
-  components: {
-    Limi_header, Limi_banner, Limi_content, Limi_footer
-  }
 }
   
 </script>

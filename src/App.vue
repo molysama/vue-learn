@@ -8,15 +8,11 @@
 </template>
 
 <script>
-import Navigation from './components/Navigation'
 
-import mockTest from './mockTest'
+import mockTest from './config/mockTest'
 
 export default {
   name: 'app',
-  components: {
-    Navigation
-  }
 }
 </script>
 

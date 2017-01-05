@@ -9,7 +9,7 @@ import 'element-ui/lib/theme-default/index.css'
 Vue.use(ElementUI)
 
 // 加入vue-router
-import router from './router'
+import router from './config/router'
 
 new Vue({
   el: '#app',

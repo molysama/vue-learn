@@ -1,10 +1,23 @@
-[[path]]
+
+# 数据格式可当做:
+# {
+#   "navs": [{
+#     title,      导航标题
+#     path,       导航链接
+#     component,  路由组件
+#     do          是否完成
+#   },
+#    ...
+#   ]
+# }
+
+[[navs]]
 title = "PAGE"
 path = "/page"
 component = "page/index"
 do = true
 
-[[path]]
+[[navs]]
 title = "FLEX"
 path = "/flex"
 # component = "flex/index"
@@ -12,12 +25,12 @@ path = "/flex"
 component = "flex/third"
 do = true
 
-[[path]]
+[[navs]]
 title = "厘米例子"
 path = "/limi"
 component = "limi/index"
 do = true
 
-[[path]]
+[[navs]]
 title = "待定"
 do = false
