@@ -13,9 +13,9 @@ component = "flex/third"
 do = true
 
 [[path]]
-title = "导航条 >"
-path = "/learn-navigation"
-component = "LearnNavigation"
+title = "厘米例子"
+path = "/limi"
+component = "limi/index"
 do = true
 
 [[path]]
