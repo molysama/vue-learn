@@ -8,7 +8,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 Vue.use(ElementUI)
 
-// 加入vue-router
+// 引入路由组件
 import router from './config/router'
 
 new Vue({

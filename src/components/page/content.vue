@@ -12,12 +12,11 @@
 
 <script>
 
-let data = {count: 1}
-export default {
+    export default {
     
     components: {
         
-        "myButton": { template: '<button @click="count++" >{{count}}</button>', data () {return data} },
+        "myButton": { template: '<button @click="count++" >{{count}}</button>', data () {return {count: 0}} },
         "childCMP": { props: ['item'], template: '<span @click="childEvent" >parent text is {{item}}</span>', methods: { childEvent(){this.$emit("childEvent")}}}
          
     },
