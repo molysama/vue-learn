@@ -4,7 +4,7 @@
 #   "navs": [{
 #     title,      导航标题
 #     path,       导航链接
-#     component,  路由组件
+#     component,  路由模板，默认为components的子目录下的index.vue
 #     do          是否完成
 #   },
 #    ...
@@ -20,9 +20,8 @@ do = true
 [[navs]]
 title = "FLEX"
 path = "/flex"
-# component = "flex/index"
+component = "flex/index"
 # component = "flex/second"
-component = "flex/third"
 do = true
 
 [[navs]]
