@@ -4,12 +4,12 @@
     <hello></hello>-->
     <Navigation></Navigation>
     <router-view></router-view>
+    
   </div>
 </template>
 
 <script>
 
-import mockTest from './config/mockTest'
 
 export default {
   name: 'app',

@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 
+//添加mockjs拦截请求，模拟返回服务器数据
+import mockTest from './config/mockTest'
+
 //引入饿了么UI组件
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
