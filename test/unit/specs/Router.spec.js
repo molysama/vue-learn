@@ -2,7 +2,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Router from 'src/router'
+import Router from 'src/config/router'
 
 describe('Router', () => {
 

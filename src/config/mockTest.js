@@ -11,4 +11,18 @@ Mock.mock('/user', {
     ]
 })
 
+
+Mock.mock('/pm25', {
+  "object|2-4": {
+    "110000": "北京市",
+    "120000": "天津市",
+    "130000": "河北省",
+    "140000": "山西省"
+  }
+})
+
+Random.paragraph()
+
+Mock.mock('/par', '@cparagraph')
+
 module.exports =  Mock
