@@ -1,10 +1,12 @@
 <template>
 
   <div class="page-body">
+  
      <Page-header/> 
      <Page-banner/> 
      <Page-content/> 
      <Page-footer/> 
+     
   </div>
 
 </template>
