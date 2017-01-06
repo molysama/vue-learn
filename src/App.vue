@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/logo.png">
-    <hello></hello>-->
+  
+    <!-- 引入左侧导航栏 -->
     <Navigation></Navigation>
+    
+    <!-- 路由视图 -->
     <router-view></router-view>
     
   </div>

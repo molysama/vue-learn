@@ -14,6 +14,7 @@ Vue.use(ElementUI)
 // 引入路由组件
 import router from './config/router'
 
+// 创建根实例
 new Vue({
   el: '#app',
   template: '<App/>',
