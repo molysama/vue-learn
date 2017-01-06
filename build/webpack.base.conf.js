@@ -79,7 +79,7 @@ module.exports = {
       })
       // ,
       // require('postcss-plugin-px2rem')({
-      //   rootValue: 100,
+      //   rootValue: 40,
       //   unitPrecision: 5,
       //   propWhiteList: [],
       //   propBlackList: [],
