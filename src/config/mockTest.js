@@ -21,8 +21,8 @@ Mock.mock('/pm25', {
   }
 })
 
-Random.paragraph()
+// Random.paragraph()
 
-Mock.mock('/par', '@cparagraph')
+// Mock.mock('/par', '@cparagraph')
 
 module.exports =  Mock
