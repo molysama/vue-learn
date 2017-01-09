@@ -1,5 +1,5 @@
 <template lang="pug" >
-<div class="header" >
+.header
   el-menu(theme="dark" default-active="1" class="el-menu-demo" mode="horizontal" @select="handleSelect")
     el-menu-item(index="1") logo
     el-submenu(:offset="6" index="2")
