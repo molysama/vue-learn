@@ -1,0 +1,6 @@
+
+function ShareData () {
+  this.data = {}
+  
+}
+

@@ -14,6 +14,8 @@ Vue.use(ElementUI)
 // 引入路由组件
 import router from './config/router'
 
+global.myGlobalData = 'hello'
+
 // 创建根实例
 new Vue({
   el: '#app',

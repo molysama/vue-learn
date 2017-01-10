@@ -11,6 +11,10 @@ Mock.mock('/user', {
     ]
 })
 
+Mock.mock('/loadParentData', {
+    "name": 'lgqlee',
+    "result": [5,34,767,9]
+})
 
 Mock.mock('/pm25', {
   "object|2-4": {
