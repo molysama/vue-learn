@@ -2,34 +2,38 @@
 
 > A Vue.js project
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-## 模板注册
- ```components/xxx/index.vue ``` 默认为路由模板，需在```src/config/router_path.toml```内配置, 其他组件全局注册
- ```
- 
-# 使用组件时首字母大写, 目录名-文件名，如：
- <Page-header> 
- <Limi-content> 
- <Hello>
- ```
+src/
+├── App.vue ----------------------- 入口组件 
+├── assets  ----------------------- 静态资源
+│   ├── limi
+│   ├── logo.png
+│   ├── navigate.png
+│   └── test.js
+├── components -------------------- vue组件，全局注册为目录-文件名的形式，如：Page-header
+│   ├── flex
+│   ├── Hello.vue
+│   ├── limi
+│   ├── Navigation.vue
+│   └── page
+├── config ------------------------ 配置目录
+│   ├── load_components.js -------- 全局注册components文件夹内的所有组件
+│   ├── mockTest.js --------------- 配置mockjs，拦截http请求，后台测试数据的来源
+│   ├── router.js ----------------- 动态加载路由
+│   └── router_path.toml ---------- 路由配置文件
+├── main.js
+├── router ------------------------ 路由模板
+│   ├── flex.vue
+│   ├── girl.vue
+│   ├── limi.vue
+│   ├── page.vue
+│   └── third.vue
+├── styles ------------------------ 样式
+    ├── common.css
+    └── navigation.styl
+
+```
+
+## 练习用，目前引入的技术
+> vue、vue-router、element-ui、stylus、pug、axios、mockjs

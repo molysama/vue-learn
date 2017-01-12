@@ -2,6 +2,8 @@
 
 .body(v-once)
   .girlBox
+  
+    //- 帽子
     .capBox
       .topBox
         .top
@@ -10,8 +12,12 @@
       .bottomBox
         .bottom1
         .bottom2
-    .headBox
-    .hair.hair1
+    
+    //- 头部  
+    .headerBox
+      .header.absolute
+      .ear.earl
+    .hair.hairl
   
   
 </template>
@@ -20,6 +26,9 @@
 </script>
 
 <style scoped lang="stylus">
+
+.absolute
+  position absolute
 
 .body
   background #ef9825
@@ -102,9 +111,37 @@
       margin-top 40px
       left 10px
       
-      
+
+.headerBox  
+  width 360px
+  height 250px 
+  position relative
+  left 58px
+  top -45px
+  overflow hidden
+  .header
+    width 320px
+    height 230px
+    background #a14a24
+    margin-top -35px
+    border-radius 50%
+    left 20px
+  .ear
+    width 38px
+    height 51px
+    background #f9cdbb
+    z-index 16
+    top 130px
+    position absolute
+    border-radius 50%
+    border #fad6c9 solid 1px
+  .earl
+    left 30px
+    transform rotate(-15deg)
   
       
       
+
+
 
 </style>
