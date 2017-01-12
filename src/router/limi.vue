@@ -21,7 +21,7 @@ export default {
 <style lang="stylus" scoped >
 
 .body 
-  background url(../../assets/limi/clouds.gif) repeat-x
+  background url(../assets/limi/clouds.gif) repeat-x
   padding-top 45px
 
 .header, .banner, .content, .footer 

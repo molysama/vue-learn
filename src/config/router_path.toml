@@ -4,32 +4,37 @@
 #   "navs": [{
 #     title,      导航标题
 #     path,       导航链接
-#     component,  路由模板，默认为components的子目录下的index.vue
+#     router,  路由模板，默认为routers的子目录下的index.vue
 #     do          是否完成
 #   },
 #    ...
 #   ]
 # }
 
+
+# ROUTER_PATH = '../router/'
+
 [[navs]]
 title = "PAGE"
 path = "/page"
-component = "page/index"
+router = "page"
 do = true
 
 [[navs]]
 title = "FLEX"
 path = "/flex"
-component = "flex/index"
-# component = "flex/second"
+router = "flex"
+# router = "flex/second"
 do = true
 
 [[navs]]
 title = "厘米例子"
 path = "/limi"
-component = "limi/index"
+router = "limi"
 do = true
 
 [[navs]]
-title = "待定"
-do = false
+title = "HelloKitty"
+path = "/kitty"
+router = "kitty"
+do = true

@@ -12,7 +12,7 @@ Vue.use(VueRouter)
 const routes = []
 navs.forEach(nav => {
   
-  //待完成路由组件不注册
+  //待完成路由不注册
   if (!nav.do) {
     return;
   }
@@ -20,7 +20,7 @@ navs.forEach(nav => {
   // 动态生成路由模板
   routes.push({ 
     path: nav.path, 
-    component: resolve => require(['../components/' + nav.component], resolve) 
+    component: resolve => require(['../router/' + nav.router], resolve) 
   })
 })
 
