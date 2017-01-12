@@ -10,6 +10,8 @@
       .bottomBox
         .bottom1
         .bottom2
+    .headBox
+    .hair.hair1
   
   
 </template>
@@ -81,9 +83,28 @@
     z-index 7 
     overflow hidden 
    
-    // TODO  
-    .bottom1
-      360px 
+    .bottom1 // 帽沿
+      width 360px 
+      height 200px
+      position absolute
+      background none
+      border #f4d641 solid 60px
+      border-radius 50%
+      
+    .bottom2 // 帽子阴影
+      background none
+      width 360px
+      height 200px
+      position absolute
+      border #c29b1e solid 53px
+      opacity 0.23
+      border-radius 50%
+      margin-top 40px
+      left 10px
+      
+      
+  
+      
       
 
 </style>

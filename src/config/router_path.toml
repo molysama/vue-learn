@@ -23,7 +23,7 @@ do = true
 [[navs]]
 title = "FLEX"
 path = "/flex"
-router = "flex"
+router = "third"
 # router = "flex/second"
 do = true
 
@@ -34,7 +34,7 @@ router = "limi"
 do = true
 
 [[navs]]
-title = "HelloKitty"
-path = "/kitty"
-router = "kitty"
+title = "girl"
+path = "/girl"
+router = "girl"
 do = true
