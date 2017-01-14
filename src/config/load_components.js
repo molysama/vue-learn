@@ -1,5 +1,5 @@
 
-// 动态注册compontents内的所有组件(不包含index.vue， 默认该文件为路由模板)，之后在全局无需注册即可使用
+// 动态注册compontents内的所有组件，之后在全局无需注册即可使用
 // 格式为  目录名-文件名， 首字母大写
 // 例子1  src/components/page/header.vue, <Page-header>
 // 例子2  src/components/Hello.vue, <Hello>
