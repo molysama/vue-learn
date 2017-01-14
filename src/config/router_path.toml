@@ -4,7 +4,7 @@
 #   "navs": [{
 #     title,      导航标题
 #     path,       导航链接
-#     router,  路由模板，默认为routers的子目录下的index.vue
+#     router,     模板路径
 #     do          是否完成
 #   },
 #    ...
