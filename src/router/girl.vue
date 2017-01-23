@@ -17,6 +17,11 @@
     .headerBox
       .header.absolute
       .ear.earl
+        .earlineBox
+          .earline
+      .ear.earr
+        .earlineBox
+          .earline
     .hair.hairl
   
   
@@ -138,6 +143,24 @@
   .earl
     left 30px
     transform rotate(-15deg)
+
+  .earlineBox
+    width 20px
+    height 6px
+    overflow hidden
+    margin-left 5px
+    margin-top 2px
+
+    .earline
+      width @width
+      height 20px
+      overflow hidden
+      border #daa58c solid 3px
+      border-radius 50% 
+    
+  .earr 
+    right 30px
+    transform rotate(15deg)
   
       
       
