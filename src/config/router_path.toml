@@ -38,3 +38,9 @@ title = "girl"
 path = "/girl"
 router = "girl"
 do = true
+
+[[navs]]
+title = "mind"
+path = "/mind"
+router = "mind"
+do = true
