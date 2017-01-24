@@ -16,17 +16,53 @@
     //- 头部  
     .headerBox
       .header.absolute
+
+      //- 左耳朵
       .ear.earl
         .earlineBox
           .earline
+      
+      //- 右耳朵
       .ear.earr
         .earlineBox
           .earline
+
       .face.absolute
+
+        //- 刘海
         .bangBox
           -let num=[1,2,3,4,5]
           each item in num 
             .bang
+        //- 左眉毛
+        .browBox.browBoxl
+          .brow.browl
+        //- 右眉毛
+        .browBox.browBoxr
+          .brow.browr
+
+        //- 左眼
+        .eye.eyel
+        //- 右眼
+        .eye.eyer
+
+        //- 左腮
+        .blusher.blusherl
+        //- 右腮
+        .blusher.blusherr
+        //- 嘴
+        .mouthBox
+          .mouth
+            .red 
+            .tongue
+            .white2
+            .white 
+            .facecolor
+            .facecolor2
+            .whitel
+            .whiter
+        //- 下巴
+        .jaw
 
     .hair.hairl
   
@@ -189,16 +225,169 @@
         border-radius 50%
         background #722f1b
         position absolute
+      
+      .bang:nth-child(1)
+        top -5px
+        transform rotate(40deg)
+      .bang:nth-child(2)
+        left 20px
+        transform rotate(20deg)
+      .bang:nth-child(3)
+        top 10px
+        left 40px
+      .bang:nth-child(4)
+        left 60px
+        transform rotate(-20deg)
+      .bang:nth-child(5)
+        left 80px
+        transform rotate(-40deg)
 
-      for num in 1 2 3 4 5
-        bang-child(num)
+// for item in 1 2 3 4 5
+//   .bang:nth-child(item)
+//     transform rotate(60deg)
 
-//TODO bang-child未生效
-bang-child(n)
-  .bang:nth-child(n)
-    transform rotate(60deg)
+    .browBox
+      position absolute
+      top 50px
+      height 8px
+      line-height 8px
+      overflow hidden
+      .brow
+        width 24px
+        height 24px
+        background none 
+        border #8b492e solid 2px
+        border-radius 50%
+    .browBoxl
+      left 40px
+      transform rotate(-10deg) 
+    .browBoxr
+      right 40px
+      transform rotate(10deg)
 
-  
+
+    .eye 
+      width 19px
+      height 27px
+      background #722f1b
+      position absolute
+      top 118px
+      border-radius 50%
+    
+    .eyel
+      left 68px
+    .eyer
+      right 68px
+
+    .blusher
+      width 32px
+      height 20px
+      background #f19482
+      position absolute
+      top 140px
+      border-radius 50%
+
+    .blusherl
+      left 30px
+    .blusherr
+      right 30px
+
+    .mouthBox
+      width 90px
+      height 60px
+      background none
+      position absolute
+      top 144px
+      left 80px
+      border-bottom-left-radius 50%
+      border-bottom-right-radius 50%
+      overflow hidden
+      .mouth
+        width 100%
+        height 100px
+        position absolute
+        bottom 0
+        border-bottom-left-radius 40%
+        border-bottom-right-radius 50%
+        border-top-left-radius 40%
+        border-top-right-radius 50%
+
+
+        .red 
+          width 100%
+          height 40px
+          position absolute 
+          bottom 0 
+          background #a4223c
+        .tongue 
+          position absolute 
+          width 50px
+          height 16px
+          left 20px
+          bottom 8px
+          background #f19482
+          border-radius 50%
+        .white2
+          position absolute 
+          width 80px
+          height 20px
+          left 5px
+          bottom 28px
+          border-radius 50%
+          background #fff
+        .white 
+          position absolute 
+          width 90px
+          height 20px
+          left 0px
+          bottom 30px
+          background #fff
+          border-radius 50%
+        .facecolor
+          position absolute 
+          width 110px
+          height 30px
+          left -10px
+          top 28px
+          border-radius 50%
+          background #f9cdaf
+        .facecolor2
+          position absolute 
+          width 70px
+          height 30px
+          left 10px
+          border-radius 50%
+          background #f9cdaf
+          top 32px
+
+        .whitel
+          position absolute 
+          width 20px
+          height 12px
+          left 0px
+          bottom 34px
+          border-radius 50%
+          background #fff
+          transform rotate(14deg)
+        .whiter
+          position absolute 
+          width 20px
+          height 12px
+          right 0px
+          bottom 34px
+          border-radius 50%
+          background #fff
+          transform rotate(-14deg)
+
+    .jaw    
+      position absolute
+      border-bottom #f3c4a5 solid 2px
+      border-radius 50%
+      width 40px
+      height 20px
+      top 196px
+      left 105px
+      
       
       
 

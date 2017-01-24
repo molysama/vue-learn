@@ -15,7 +15,7 @@
 # ROUTER_PATH = '../router/'
 
 [[navs]]
-title = "PAGE"
+title = "ELEMENT"
 path = "/page"
 router = "page"
 do = true
@@ -34,13 +34,13 @@ router = "limi"
 do = true
 
 [[navs]]
-title = "girl"
+title = "GIRL"
 path = "/girl"
 router = "girl"
 do = true
 
 [[navs]]
-title = "mind"
+title = "MIND"
 path = "/mind"
 router = "mind"
 do = true
