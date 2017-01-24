@@ -20,7 +20,7 @@ bgc = #e5e9f2
 objbgc = deepskyblue
 
 .el-col
-  border 1px dashed royalblue
+  border 1px dashed limegreen
   background-color bgc
   padding 10px
 

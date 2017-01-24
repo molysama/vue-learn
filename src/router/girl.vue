@@ -22,6 +22,12 @@
       .ear.earr
         .earlineBox
           .earline
+      .face.absolute
+        .bangBox
+          -let num=[1,2,3,4,5]
+          each item in num 
+            .bang
+
     .hair.hairl
   
   
@@ -161,6 +167,37 @@
   .earr 
     right 30px
     transform rotate(15deg)
+  
+  .face 
+    width 250px
+    height 240px
+    background #f9cdaf
+    left 52px
+    top 0px
+    border-radius 50%
+    z-index 17
+
+    .bangBox
+      width 86px
+      height 54px
+      position absolute 
+      top 5px
+      left 82px
+      .bang 
+        width 10px
+        height 54px
+        border-radius 50%
+        background #722f1b
+        position absolute
+
+      for num in 1 2 3 4 5
+        bang-child(num)
+
+//TODO bang-child未生效
+bang-child(n)
+  .bang:nth-child(n)
+    transform rotate(60deg)
+
   
       
       
