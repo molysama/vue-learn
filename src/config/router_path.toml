@@ -2,6 +2,7 @@
 # 数据格式可当做:
 # {
 #   "navs": [{
+#     name,       路由命名
 #     title,      导航标题
 #     path,       导航链接
 #     router,     模板路径
@@ -15,32 +16,37 @@
 # ROUTER_PATH = '../router/'
 
 [[navs]]
+name = "page"
 title = "ELEMENT"
 path = "/page"
 router = "page"
-do = true
 
 [[navs]]
+name = "flex"
 title = "FLEX"
 path = "/flex"
 router = "third"
-# router = "flex/second"
-do = true
 
 [[navs]]
+name = "limi"
 title = "厘米例子"
 path = "/limi"
 router = "limi"
-do = true
 
 [[navs]]
+name = "girl"
 title = "GIRL"
 path = "/girl"
 router = "girl"
-do = true
 
 [[navs]]
+name = "mind"
 title = "MIND"
 path = "/mind"
 router = "mind"
-do = true
+redirect = "child"
+  [[navs.child]]
+  name = "child"
+  title = "日历"
+  path = "child"
+  router = "second"

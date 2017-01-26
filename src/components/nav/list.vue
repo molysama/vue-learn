@@ -1,6 +1,6 @@
 
 <template lang="pug" >
-.side-panel.c
+.side-panel
   
   Nav-menus(:items="navs")
           
@@ -16,28 +16,24 @@ export default {
         {
           "class": "fa-cog",
           "title": "HOME",
+          "name": "mind",
           "child": [
           {
             "class": "fa-cog",
-            "title": "child"
-          },
-          {
-            "class": "fa-calendar-o",
-            "title": "日历"
-          },
-          {
-            "class": "fa-clone",
-            "title": "新建"
-          },
+            "title": "child",
+            "name": "child"
+          }
           ]
         },
         {
           "class": "fa-book",
-          "title": "BOOK"
+          "title": "GIRL",
+          "name": "girl"
         },
         {
           "class": "fa-pencil",
-          "title": "EDIT"
+          "title": "EDIT",
+          "name": "page"
         }
       ]
     }
@@ -46,12 +42,21 @@ export default {
 }
   
 </script>
-<style lang="stylus" scopde >
-@import './list-c.styl'
+<style lang="stylus" scoped >
   
-.c {
-  ul {
-    width: 150px;
+* {
+  box-sizing: border-box;
+}
+.side-panel {
+  position fixed
+  top 200px
+  left 0px
+  z-index 999
+  
+  &:nth-child(2n) {
+    background: #483430;
   }
 }
+ul 
+  width 150px
 </style>

@@ -3,8 +3,9 @@
 ul 
   // TODO: 当使用li作为link时，会附加浏览器点击样式 
   // router-link(v-for="item in items", tag="li", :to="item.title", :name="item.title")
+
   li(v-for="item in items")
-    a 
+    router-link(:to="{ name: item.name}") 
       i.fa.fa-fw(:class="item.class")
       span.menu-item {{ item.title }}
     Nav-menus(:items="item.child", v-if="item.child")
@@ -22,5 +23,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped >
-  
+
+@import './menus.styl'
+
 </style>

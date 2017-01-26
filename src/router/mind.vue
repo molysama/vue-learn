@@ -1,23 +1,24 @@
 <template lang="pug" >
 
 .body
-  el-row(:gutter="24")
-    el-col(:span="8")
-      ul 
-        li ONE
-        li TWO
-        li THREE
-        li FOUR
-        li FIVE
+  router-view
+  // el-row(:gutter="24")
+  //   el-col(:span="8")
+  //     ul 
+  //       li ONE
+  //       li TWO
+  //       li THREE
+  //       li FOUR
+  //       li FIVE
 
 
-  el-row 
-    el-col(:span="8")
-      .rotate-wrap
-        .rotate
-          p hi
-    el-col(:span="8")
-    el-col(:span="8")
+  // el-row 
+  //   el-col(:span="8")
+  //     .rotate-wrap
+  //       .rotate
+  //         p hi
+  //   el-col(:span="8")
+  //   el-col(:span="8")
 
   W3-bgclip
   
