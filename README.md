@@ -24,3 +24,6 @@ src/
 
 ## 练习用，目前引入的技术
 > vue、vue-router、element-ui、stylus、pug、axios、mockjs
+
+## License
+Mit

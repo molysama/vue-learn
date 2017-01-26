@@ -18,6 +18,8 @@
           p hi
     el-col(:span="8")
     el-col(:span="8")
+
+  W3-bgclip
   
 </template>
 <script>

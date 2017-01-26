@@ -1,0 +1,108 @@
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  font-family: 'entypo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #483430;
+  background: #E36A5B;
+}
+.side-panel {
+  padding: 30px 0;
+  
+  &:nth-child(2n) {
+    background: #483430;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  > ul {
+    
+    > li {
+      &:first-child {
+        border-top-right-radius: 3px;
+        
+        a {
+          padding-top: 13px;
+        }
+      }
+      &:last-child {
+        border-bottom-right-radius: 3px;
+        a {
+          padding-bottom: 13px;
+        }
+      }
+    }
+    ul {
+      width: 150px;
+      padding-left: 10px;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      
+      li {
+        &:first-child {
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+          border-right-color: #efefef;
+          
+          &:before {
+            size = 5px;
+            color: #efefef;
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            top: 50%;
+            right: 100%;
+            margin-top: size * -1;
+            border-top: size solid transparent;
+            border-bottom: size solid transparent; 
+            border-right:size solid @color;
+            border-right-color: inherit;
+          }
+          
+          &:hover {
+            border-right-color: #fff;
+          }
+        }
+        &:last-child {
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+  }
+  li {
+    position: relative;
+    background: #efefef;
+    
+    &:hover {
+      background: #fff;
+      
+      > ul {
+        display: block;
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+}
