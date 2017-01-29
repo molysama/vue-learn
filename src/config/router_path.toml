@@ -6,6 +6,7 @@
 #     title,      导航标题
 #     path,       导航链接
 #     router,     模板路径
+#     alias,      别名
 #   },
 #    ...
 #   ]
@@ -39,6 +40,7 @@ title = "MIND"
 path = "/mind"
 router = "mind/index"
 redirect = "mind1"  
+alias = "/"
 
 # 当点击mind标签时，默认到mind1页面
 # 子路由中的path不含/

@@ -19,6 +19,11 @@ function createRoute(route) {
   result.meta = route.meta || {}
   result.component = resolve => require(['../router/' + route.router], resolve)
 
+  // 如果存在别名
+  if (route.alias) {
+    result.alias = route.alias
+  }
+
   // 如果存在重定向, 为了逻辑清晰仅接受name参数
   if (route.redirect) {
     result.redirect = { name: route.redirect }
