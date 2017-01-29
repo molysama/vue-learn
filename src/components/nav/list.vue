@@ -25,6 +25,11 @@ export default {
             "name": "mind1"
           },
           {
+            "class": "fa-car",
+            "title": "mind2",
+            "name": "lowbeecss"
+          },
+          {
             "class": "fa-book",
             "title": "GIRL",
             "name": "girl"

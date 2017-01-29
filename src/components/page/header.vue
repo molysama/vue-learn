@@ -26,13 +26,13 @@ export default {
      }
    },
    methods: {
-   handleSelect(key, keyPath) {
-    axios.get('/user')
-       .then(res => {
-        alert(JSON.stringify(res.data))
-       })
-       .catch(err => console.log(err))
-   }
+    handleSelect(key, keyPath) {
+      axios.get('/user')
+        .then(res => {
+          alert(JSON.stringify(res.data))
+        })
+        .catch(err => console.log(err))
+    }
    }  
 }
 </script>
