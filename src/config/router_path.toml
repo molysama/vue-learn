@@ -6,7 +6,6 @@
 #     title,      导航标题
 #     path,       导航链接
 #     router,     模板路径
-#     do          是否完成
 #   },
 #    ...
 #   ]
@@ -54,3 +53,9 @@ redirect = "mind1"
   title = "GIRL"
   path = "girl"
   router = "mind/girl"
+
+  [[navs.child]]
+  name = "lowbeecss"
+  title = "玩玩CSS"
+  path = "lowcss"
+  router = "mind/mind_2"

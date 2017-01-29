@@ -16,6 +16,7 @@ function createRoute(route) {
   let result = {}
   result.name = route.name
   result.path = route.path
+  result.meta = route.meta || {}
   result.component = resolve => require(['../router/' + route.router], resolve)
 
   // 如果存在重定向, 为了逻辑清晰仅接受name参数

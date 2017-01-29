@@ -8,6 +8,7 @@
 </template>
 <script>
 
+import {navs} from '../../config/router_path.toml'
 export default {
 
   data () {
@@ -32,11 +33,26 @@ export default {
         },
         {
           "class": "fa-pencil",
-          "title": "EDIT",
+          "title": "VUE",
           "name": "page"
+        },
+        {
+          "class": "fa-paper-plane",
+          "title": "FLEX",
+          "name": "flex"
         }
       ]
     }
+  },
+
+  created () {
+
+    //TODO: 生成路由时添加图标样式
+    // let navClasses = ["fa-cog", "fa-pencil"]
+
+    // this.navs = navs.map(nav => {
+
+    // })
   }
 
 }
