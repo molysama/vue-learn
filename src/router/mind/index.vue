@@ -1,6 +1,7 @@
 <template lang="pug" >
 
 .body
+  h2 This is mind page
   router-view
   // el-row(:gutter="24")
   //   el-col(:span="8")
@@ -20,7 +21,6 @@
   //   el-col(:span="8")
   //   el-col(:span="8")
 
-  W3-bgclip
   
 </template>
 <script>
@@ -31,6 +31,10 @@
 
 bgc = #e5e9f2
 objbgc = deepskyblue
+
+.body 
+  >h2 
+    text-align center
 
 ul 
 

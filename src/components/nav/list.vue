@@ -15,20 +15,20 @@ export default {
       navs: [
         {
           "class": "fa-cog",
-          "title": "HOME",
+          "title": "MIND",
           "name": "mind",
           "child": [
           {
             "class": "fa-cog",
-            "title": "child",
-            "name": "child"
+            "title": "mind1",
+            "name": "mind1"
+          },
+          {
+            "class": "fa-book",
+            "title": "GIRL",
+            "name": "girl"
           }
           ]
-        },
-        {
-          "class": "fa-book",
-          "title": "GIRL",
-          "name": "girl"
         },
         {
           "class": "fa-pencil",
@@ -57,6 +57,4 @@ export default {
     background: #483430;
   }
 }
-ul 
-  width 150px
 </style>

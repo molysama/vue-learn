@@ -33,20 +33,24 @@ title = "厘米例子"
 path = "/limi"
 router = "limi"
 
-[[navs]]
-name = "girl"
-title = "GIRL"
-path = "/girl"
-router = "girl"
 
 [[navs]]
 name = "mind"
 title = "MIND"
 path = "/mind"
-router = "mind"
-redirect = "child"
+router = "mind/index"
+redirect = "mind1"  
+
+# 当点击mind标签时，默认到mind1页面
+# 子路由中的path不含/
   [[navs.child]]
-  name = "child"
+  name = "mind1"
   title = "日历"
-  path = "child"
-  router = "second"
+  path = "mind1"
+  router = "mind/mind_1"
+
+  [[navs.child]]
+  name = "girl"
+  title = "GIRL"
+  path = "girl"
+  router = "mind/girl"

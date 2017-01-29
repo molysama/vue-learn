@@ -1,7 +1,6 @@
 
 <template lang="pug" >
 ul 
-  // TODO: 当使用li作为link时，会附加浏览器点击样式 
   // router-link(v-for="item in items", tag="li", :to="item.title", :name="item.title")
 
   li(v-for="item in items")
