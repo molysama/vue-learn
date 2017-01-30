@@ -21,18 +21,23 @@ export default {
           "child": [
           {
             "class": "fa-cog",
-            "title": "mind1",
+            "title": "CLIP",
             "name": "mind1"
-          },
-          {
-            "class": "fa-car",
-            "title": "mind2",
-            "name": "lowbeecss"
           },
           {
             "class": "fa-book",
             "title": "GIRL",
             "name": "girl"
+          },
+          {
+            "class": "fa-cog",
+            "title": "投影",
+            "name": "shadow"
+          },
+          {
+            "class": "fa-car",
+            "title": "mind2",
+            "name": "lowbeecss"
           }
           ]
         },

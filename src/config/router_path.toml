@@ -52,6 +52,12 @@ alias = "/"
   router = "mind/mind_1"
 
   [[navs.child]]
+  name = "shadow"
+  title = "多重投影"
+  path = "shadow"
+  router = "mind/shadow"
+
+  [[navs.child]]
   name = "girl"
   title = "GIRL"
   path = "girl"

@@ -1,14 +1,13 @@
 
 <template lang="pug" >
 
-.body
-  .div
-    span.c background-clip
-    span 案例， 截取
-    span.c border
-    span 的背景渲染范围, 此例中白色背景截止在
-    span.c padding
-    span 范围内
+.bgclip
+  span.c background-clip
+  span 案例， 截取
+  span.c border
+  span 的背景渲染范围, 此例中白色背景截止在
+  span.c padding
+  span 范围内
 
 </template>
 
@@ -22,9 +21,8 @@ export default {
 
 <style lang="stylus" scoped>
 
-.body 
-  background url('http://csssecrets.io/images/stone-art.jpg')
-  .div 
+  .bgclip 
+    background url('http://csssecrets.io/images/stone-art.jpg')
     border 10px solid hsla(0, 0%, 100%, .5)
     background white
     background-clip padding-box
