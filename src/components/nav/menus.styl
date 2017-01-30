@@ -1,100 +1,73 @@
-  a
-    color #483430
-    text-decoration: none
-    //TODO: 设置图标变色过渡时间 transition-delay: 0.5s
-
-    &:hover i
-      color deepskyblue
-    &.router-link-active i
-        color deepskyblue
 
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-    ul {
-    
-    > li {
+  // 主菜单
+  ul
+    margin 0
+    padding 0
+    list-style none
+
+    li
+      &:first-child 
+        border-top-right-radius 3px
+        a
+          padding-top 13px
+      &:last-child
+        border-bottom-right-radius 3px
+        a
+          padding-bottom 13px
+  
       
-      // 第一个li元素顶部圆角
-      &:first-child {
-        border-top-right-radius: 3px;
-        
-        a {
-          padding-top: 13px;
-        }
-      }
-      
-      // 最后一个li元素顶部圆角
-      &:last-child {
-        border-bottom-right-radius: 3px;
-        a {
-          padding-bottom: 13px;
-        }
-      }
-    }
-    ul {
-      width: 150px;
-      padding-left: 10px;
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 100%;
-      
-      li {
-        &:first-child {
-          border-top-left-radius: 3px;
-          border-top-right-radius: 3px;
-          border-right-color: #efefef;
-          
+  
+  li
+    position relative
+    background #efefef
+    &:hover
+      background #fff
+      >ul
+        display block
+    // 子菜单
+    ul
+      width 150px
+      padding-left 10px
+      display none
+      position absolute
+      top 0
+      left 100%
+      li 
+        &:first-child
+          border-top-left-radius 3px
+          border-right-color #efefef
           // 小箭头
-          &:before {
-            size = 5px;
-            color: #efefef;
-            position: absolute;
-            content: "";
-            width: 0;
-            height: 0;
-            top: 50%;
-            right: 100%;
-            margin-top: size * -1;
-            border-top: size solid transparent;
-            border-bottom: size solid transparent; 
-            border-right:size solid @color;
-            border-right-color: inherit;
-          }
-          
-          &:hover {
-            border-right-color: #fff;
-          }
-        }
-        &:last-child {
-          border-bottom-left-radius: 3px;
-          border-bottom-right-radius: 3px;
-        }
-      }
-    }
-  }
-  li {
-    position: relative;
-    background: #efefef;
-    
-    &:hover {
-      background: #fff;
-      
-      > ul {
-        display: block;
-      }
-    }
-  }
-  a {
-    display: inline-block;
+          &:before
+            size = 5px
+            color #efefef
+            position absolute
+            content ""
+            width 0
+            height 0
+            top 50%
+            right 100%
+            margin-top size * -1
+            border-top size solid transparent
+            border-bottom size solid transparent 
+            border-right:size solid @color
+            border-right-color inherit
+        &:last-child
+          border-bottom-left-radius 3px
+        
+        &:hover
+          border-right-color #fff
+  a
+    display inline-block
     width 120px
-    padding: 8px 15px;
-    cursor: pointer;
-  }
+    padding 8px 15px
+    cursor pointer
+    color #483430
+    text-decoration none
+    //TODO: 设置图标变色过渡时间 transition-delay 0.5s
+    &:hover, &.router-link-active
+      i
+        color deepskyblue
 .menu-item 
   padding-left 5px
   padding-right 5px

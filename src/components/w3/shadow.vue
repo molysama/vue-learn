@@ -2,6 +2,7 @@
 <template lang="pug" >
 
 .shadow
+  slot
 
 </template>
 <script>
