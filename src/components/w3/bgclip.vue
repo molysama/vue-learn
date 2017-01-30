@@ -2,7 +2,13 @@
 <template lang="pug" >
 
 .body
-  .div 一个案例，截取border的背景渲染范围
+  .div
+    span.c background-clip
+    span 案例， 截取
+    span.c border
+    span 的背景渲染范围, 此例中白色背景截止在
+    span.c padding
+    span 范围内
 
 </template>
 
@@ -28,5 +34,10 @@ export default {
     margin 2em auto 0
     font 100%/1.5 sans-serif
 
+  .c 
+    font-weight 700
+    color green
+    padding-left 2px
+    padding-right 2px
   
 </style>
