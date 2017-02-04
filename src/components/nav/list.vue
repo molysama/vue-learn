@@ -35,6 +35,11 @@ export default {
             "name": "shadow"
           },
           {
+            "class": "fa-phone",
+            "title": "条纹",
+            "name": "linear_gradient"
+          },
+          {
             "class": "fa-car",
             "title": "mind2",
             "name": "lowbeecss"

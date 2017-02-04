@@ -30,6 +30,7 @@ function createRoute(route) {
   }
 
   // 如果存在子路由
+  //TODO: 提示 duplicate named routes definition
   if (route.child) {
     result.children = route.child.map(child => {
       return createRoute(child)

@@ -68,3 +68,9 @@ alias = "/"
   title = "玩玩CSS"
   path = "lowcss"
   router = "mind/mind_2"
+
+  [[navs.child]]
+  name = "linear_gradient"
+  title = "条纹"
+  path = "linear-gradient"
+  router = "mind/linear_gradient"
