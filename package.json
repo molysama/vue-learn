@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
-    "element-ui": "^1.0.9",
     "mockjs": "^1.0.1-beta3",
     "node-sass": "^4.3.0",
     "pug": "^2.0.0-beta6",

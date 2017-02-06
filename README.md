@@ -1,6 +1,11 @@
 # vue-learn
 
-> A Vue.js project
+```bash
+  # 建议使用淘宝源
+  $ npm install cnpm -g
+  $ cnpm install
+  
+```
 
 ```
 
@@ -22,8 +27,13 @@ src/
 
 ```
 
-## 练习用，目前引入的技术
-> vue、vue-router、element-ui、stylus、pug、axios、mockjs
+## Features
+* vue
+* vue-router
+* stylus
+* pug
+* axios
+* mockjs
 
 ## License
 Mit
