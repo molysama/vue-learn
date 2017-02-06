@@ -16,11 +16,11 @@
 
 # ROUTER_PATH = '../router/'
 
-[[navs]]
-name = "page"
-title = "ELEMENT"
-path = "/page"
-router = "page"
+#[[navs]]
+#name = "page"
+#title = "ELEMENT"
+#path = "/page"
+#router = "page"
 
 [[navs]]
 name = "flex"

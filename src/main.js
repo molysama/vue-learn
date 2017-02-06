@@ -7,9 +7,9 @@ import App from './App'
 import mockTest from './config/mockTest'
 
 //引入饿了么UI组件
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
-Vue.use(ElementUI)
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-default/index.css'
+// Vue.use(ElementUI)
 
 //注册所有组件
 import components from './config/load_components'

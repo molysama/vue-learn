@@ -35,7 +35,7 @@ export default {
             "name": "shadow"
           },
           {
-            "class": "fa-phone",
+            "class": "fa-pencil",
             "title": "条纹",
             "name": "linear_gradient"
           },
@@ -46,11 +46,11 @@ export default {
           }
           ]
         },
-        {
-          "class": "fa-pencil",
-          "title": "VUE",
-          "name": "page"
-        },
+        // {
+        //   "class": "fa-pencil",
+        //   "title": "VUE",
+        //   "name": "page"
+        // },
         {
           "class": "fa-paper-plane",
           "title": "FLEX",
