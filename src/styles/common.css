@@ -35,3 +35,14 @@ a:active
     border: none;
     outline: none;
 }
+/* 清除浮动 */
+.clearfix:after{ 
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+		visibility: hidden;
+}
+.clearfix{ /*兼容 IE*/
+		zoom: 1;
+}
