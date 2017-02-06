@@ -4,6 +4,7 @@
   width 600px
   height auto 
   margin 0 auto
+  margin-top 45px
   border 1px solid black
 .wrap-left 
   li 
@@ -20,9 +21,9 @@
     float right 
     margin 5px 0
     &:hover 
-      color #fff
+      color snow
     &.active 
-      color #fff
+      color snow
 ul 
   li 
     height 130px
