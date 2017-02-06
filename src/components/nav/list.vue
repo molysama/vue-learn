@@ -55,6 +55,11 @@ export default {
               "class": "fa-pencil",
               "title": "布局2",
               "name": "layout2"
+            },
+            {
+              "class": "fa-pencil",
+              "title": "布局3",
+              "name": "layout3"
             }
           ]
         },
