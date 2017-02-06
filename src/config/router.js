@@ -31,7 +31,8 @@ function createRoute(route) {
 
   // 如果存在子路由
   /*TODO: 警告 duplicate named routes definition
-          vue-router 已更新至2.2.0 警告依然存在
+          根据Issues#1119 vue-router 已更新至2.2.0
+          然而警告依然存在
   */ 
   if (route.child) {
     result.children = route.child.map(child => {
