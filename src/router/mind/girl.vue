@@ -64,7 +64,21 @@
         //- 下巴
         .jaw
 
+    //- 左头发
     .hair.hairl
+      .hairline.hairline1
+      .hairline.hairline2
+      .hairline.hairline3
+      .hairline.hairline4
+      .hairline.hairline5
+    //- 左头发背景
+    .hair.hairlbg
+      .hairline.hariline1
+      .hairline.hairline2
+      .hairline.hairline3
+      .hairline.hairline4
+      .hairline.hairline5
+
   
   
 </template>
@@ -242,9 +256,6 @@
         left 80px
         transform rotate(-40deg)
 
-// for item in 1 2 3 4 5
-//   .bang:nth-child(item)
-//     transform rotate(60deg)
 
     .browBox
       position absolute
@@ -390,6 +401,67 @@
       
       
       
+
+
+
+
+
+
+.hair 
+  width 120px
+  height 90px
+  position absolute 
+  top 170px
+
+.hairl
+  left -18px
+  z-index 20
+  transform rotate(30deg)
+  .hairline
+    background #a14124
+    position absolute
+  .hairline1
+    width 100px
+    height 40px
+    border-radius 50%
+    transform rotate(-15deg)
+  .hairline2
+    width 100px
+    height 36px
+    left 0
+    top 25px
+    border-radius 50%
+    transform rotate(-30deg)
+  .hairline3
+    width 100px
+    height 40px
+    left 0
+    top 40px
+    border-radius 50%
+    transform rotate(-70deg)
+  .hairline4
+    width 70px
+    height 40px
+    left 40px
+    top 40px
+    border-radius 50%
+    transform rotate(-90deg)
+  .hairline5
+    width 70px
+    height 40px
+    left 60px
+    top 20px
+    border-radius 50%
+    transform rotate(-100deg)
+.hairlbg
+  left -10px
+  margin-top 16px
+  z-index 15
+  transform rotate(30deg)  
+  .harline
+    background #722f1b
+    position absolute
+
 
 
 
