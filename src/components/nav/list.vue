@@ -38,19 +38,21 @@ export default {
             "class": "fa-pencil",
             "title": "条纹",
             "name": "linear_gradient"
-          },
-          {
-            "class": "fa-car",
-            "title": "mind2",
-            "name": "lowbeecss"
           }
           ]
         },
-        // {
-        //   "class": "fa-pencil",
-        //   "title": "VUE",
-        //   "name": "page"
-        // },
+        {
+          "class": "fa-pencil",
+          "title": "布局",
+          "name": "layout",
+          "child": [
+            {
+              "class": "fa-pencil",
+              "title": "布局1",
+              "name": "layout1"
+            }
+          ]
+        },
         {
           "class": "fa-paper-plane",
           "title": "FLEX",
