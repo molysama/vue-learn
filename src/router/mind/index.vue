@@ -28,6 +28,8 @@ export default {
 <style lang="stylus" scoped >
 
 .body 
+  max-width 960px
+  margin 0 auto
   >h2 
     text-align center
 

@@ -6,7 +6,7 @@ body {
 	font-size: 16px;
 	line-height: 25px;
   background: #E36A5B;
-	max-width: 960px;
+	/*max-width: 960px;*/
 	margin: 0 auto;
 }
 ol, ul, li {
