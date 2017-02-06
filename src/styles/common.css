@@ -31,6 +31,7 @@ a:visited,
 a:hover, 
 a:active
 {
+		color: black;
     text-decoration: none;
     border: none;
     outline: none;

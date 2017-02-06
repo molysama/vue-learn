@@ -34,6 +34,12 @@ redirect = "layout1"
   path = "layout1"
   router = "layout/layout1"
 
+  [[navs.child]]
+  name = "layout2"
+  title = "第二个布局"
+  path = "layout2"
+  router = "layout/layout2"
+
 [[navs]]
 name = "flex"
 title = "FLEX"
@@ -54,9 +60,6 @@ path = "/mind"
 router = "mind/index"
 redirect = "mind1"  
 alias = "/"
-
-# 当点击mind标签时，默认到mind1页面
-# 子路由中的path不含/
   [[navs.child]]
   name = "mind1"
   title = "日历"

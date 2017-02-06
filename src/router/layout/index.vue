@@ -18,8 +18,4 @@ export default {
 
 <style lang="stylus" scoped >
 
-.body 
-  >h2 
-    text-align center
-
 </style>
