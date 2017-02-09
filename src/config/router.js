@@ -45,7 +45,7 @@ function createRoute(route) {
 
 //实例化路由组件
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   routes
 })
 module.exports = router
