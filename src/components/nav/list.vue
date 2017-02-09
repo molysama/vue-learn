@@ -67,6 +67,11 @@ export default {
           "class": "fa-paper-plane",
           "title": "FLEX",
           "name": "flex"
+        },
+        {
+          "class": "fa-bomb",
+          "title": "Vue示例",
+          "name": "vue"
         }
       ]
     }

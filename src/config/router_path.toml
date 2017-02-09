@@ -16,11 +16,11 @@
 
 # ROUTER_PATH = '../router/'
 
-#[[navs]]
-#name = "page"
-#title = "ELEMENT"
-#path = "/page"
-#router = "page"
+[[navs]]
+name = "vue"
+title = "Vue示例"
+path = "/vue"
+router = "vue"
 
 [[navs]]
 name = "layout"
