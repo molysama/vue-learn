@@ -10,10 +10,6 @@ div
 export default {
   
   props: ['parentData'],
-  data () {
-    return {
-    }
-  },
   computed: {
     msg () {
       return this.parentData
