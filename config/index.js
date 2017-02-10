@@ -15,6 +15,7 @@ module.exports = {
     // npm install --save-dev compression-webpack-plugin
     productionGzip: false,
     productionGzipExtensions: ['js', 'css']
+
   },
   dev: {
     env: require('./dev.env'),

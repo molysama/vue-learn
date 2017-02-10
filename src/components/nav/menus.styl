@@ -5,6 +5,22 @@
     margin 0
     padding 0
     list-style none
+    &:first-child
+      transition-duration .5s
+      opacity 0.2
+      &:hover 
+        opacity 1
+    //TODO: 非hover时隐藏左侧导航栏
+    // position relative
+    // left -109px
+    // i 
+    //   position absolute
+    //   left 120px
+    // &:hover 
+    //   left 0px
+    //   i 
+    //     position relative
+    //     left 0
 
     li
       &:first-child 

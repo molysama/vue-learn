@@ -35,7 +35,28 @@
           span.icon item          
           span.icon item          
     section.gray-section 
-    section.purple-section
+      .article-preview.clearfix
+        .img-section
+          img(src="../../assets/layout3/pic01.jpg", alt="")
+        .text-section
+          h2 标题
+          .sub-heading 副标题
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, accusamus, quisquam. Veniam hic itaque necessitatibus, qui. Provident voluptas minima, dolores, illum qui, dolorum commodi porro asperiores ducimus ipsam, beatae expedita.
+      .article-preview.clearfix
+        .text-section
+          h2 标题
+          .sub-heading 副标题
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, accusamus, quisquam. Veniam hic itaque necessitatibus, qui. Provident voluptas minima, dolores, illum qui, dolorum commodi porro asperiores ducimus ipsam, beatae expedita.
+        .img-section
+          img(src="../../assets/layout3/pic02.jpg", alt="")
+      .article-preview.clearfix
+        .img-section
+          img(src="../../assets/layout3/pic03.jpg", alt="")
+        .text-section
+          h2 标题
+          .sub-heading 副标题
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, accusamus, quisquam. Veniam hic itaque necessitatibus, qui. Provident voluptas minima, dolores, illum qui, dolorum commodi porro asperiores ducimus ipsam, beatae expedita.
+      section.purple-section
 
 </template>
 <style lang="stylus" scoped>
@@ -104,6 +125,7 @@ button
   .hr 
     background #fff
   .icon-group 
+    margin-top 60px
     .icon
       display inline-block 
       width 80px 
@@ -113,6 +135,24 @@ button
       transform rotate(45deg)
       border 1px solid #655
       
+.gray-section 
+  background #655
+  .article-preview
+    >div 
+      float left
+    .img-section 
+      width 45%
+      img 
+        width 100%
+        display block //解决图片占不全的问题
+    .text-section 
+      width 55%
+      box-sizing border-box
+      padding-top 50px
+      padding-left 50px
+      p 
+        font-size 15px
+        letter-spacing 1px
 
 .wrapper
   max-width 1080px
