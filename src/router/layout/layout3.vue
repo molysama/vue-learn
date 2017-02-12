@@ -57,6 +57,31 @@
           .sub-heading 副标题
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, accusamus, quisquam. Veniam hic itaque necessitatibus, qui. Provident voluptas minima, dolores, illum qui, dolorum commodi porro asperiores ducimus ipsam, beatae expedita.
       section.purple-section
+        .heading-wrapper
+          h2 标题
+          div.sub-heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repudiandae, eligendi nesciunt dolore natus deleniti. Facilis eius mollitia, vitae culpa assumenda similique ex. Omnis ipsam adipisci beatae iste provident nulla!
+          .car-group.clearfix
+            .card
+              h3 小标题
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+            .card
+              h3 小标题
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+            .card
+              h3 小标题
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+            .card
+              h3 小标题
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+            .card
+              h3 小标题
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+            .card
+              h3 小标题
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+
+
+
 
 </template>
 <style lang="stylus" scoped>
@@ -112,7 +137,9 @@ button
   border none
   background #333
   color #eee
-  background deepskyblue
+  background #078494
+  &:hover 
+    background #078699
   padding 10px
   border-radius 10%
 
@@ -153,6 +180,38 @@ button
       p 
         font-size 15px
         letter-spacing 1px
+
+.purple-section 
+  background #3F3965
+  color #fff
+  padding 80px
+  .hr 
+    background #373259
+  .heading-wrapper 
+    text-align center
+    .card 
+      float left 
+      width 50% 
+      min-height 300px
+      padding 20px
+      box-sizing border-box
+      color #ddd
+      &:first-child 
+        background rgba(0, 0, 0, 0.05)
+      &:nth-child(2)
+        background rgba(0, 0, 0, 0.09)
+      &:nth-child(3)
+        background rgba(0, 0, 0, 0.13)
+      &:nth-child(4)
+        background rgba(0, 0, 0, 0.17)
+      &:nth-child(5)
+        background rgba(0, 0, 0, 0.21)
+      &:nth-child(6)
+        background rgba(0, 0, 0, 0.25)
+
+p 
+  font-size 18px
+  letter-spacing 1px
 
 .wrapper
   max-width 1080px
