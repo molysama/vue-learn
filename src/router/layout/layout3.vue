@@ -1,5 +1,5 @@
 
-<template lang="pug" >
+<template lang="jade" >
 
 .page-wrapper
   header
