@@ -5,6 +5,11 @@ import App from './App'
 
 //添加mockjs拦截请求，模拟返回服务器数据
 import mockTest from './config/mockTest'
+import shopMock from './config/shopMock'
+
+import store from './store'
+import { currency } from './currency'
+Vue.filter('currency', currency)
 
 //引入饿了么UI组件
 // import ElementUI from 'element-ui'
@@ -24,5 +29,6 @@ new Vue({
   el: '#app',
   template: '<App/>',
   components: { App },
-  router
+  router,
+  store
 })

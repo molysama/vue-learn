@@ -20,6 +20,7 @@
   a 
     float right 
     margin 5px 0
+    cursor pointer
     &:hover 
       color snow
     &.active 
@@ -37,11 +38,11 @@ ul
 .wrap(:class="wrapFloat")
   .top.clearfix 
     h2 通过按钮改变浮动模式
-    a(href="#", title="右浮动模式", :class="{active: float==='right'}", @click="changeFloat")
+    a(title="右浮动模式", :class="{active: float==='right'}", @click="changeFloat")
       span.fa.fa-stack.fa-xs
         i.fa.fa-stack-2x.fa-square-o
         i.fa.fa-stack-1x.fa-th-list
-    a(href="#", title="左浮动模式", :class="{active: float==='left'}", @click="changeFloat")
+    a(title="左浮动模式", :class="{active: float==='left'}", @click="changeFloat")
       span.fa.fa-stack.fa-xs
         i.fa.fa-stack-2x.fa-square-o
         i.fa.fa-stack-1x.fa-list
