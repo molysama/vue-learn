@@ -7,21 +7,17 @@ import App from './App'
 import mockTest from './config/mockTest'
 import shopMock from './config/shopMock'
 
+// vuex
 import store from './store'
 import { currency } from './currency'
 Vue.filter('currency', currency)
 
-//引入饿了么UI组件
-// import ElementUI from 'element-ui'
-// import 'element-ui/lib/theme-default/index.css'
-// Vue.use(ElementUI)
-
 //注册所有组件
 import components from './config/load_components'
 
-// 引入路由组件
 import router from './config/router'
 
+// 测试全局变量
 global.myGlobalData = 'hello'
 
 // 创建根实例
