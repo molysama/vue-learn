@@ -38,11 +38,6 @@ export default {
             "class": "fa-pencil",
             "title": "条纹",
             "name": "linear_gradient"
-          },
-          {
-            "class": "fa-phone",
-            "title": "VUEX",
-            "name": "vuex"
           }
           ]
         },
@@ -77,6 +72,11 @@ export default {
           "class": "fa-bomb",
           "title": "Vue示例",
           "name": "vue"
+        },
+        {
+          "class": "fa-phone",
+          "title": "VUEX",
+          "name": "vuex"
         }
       ]
     }
