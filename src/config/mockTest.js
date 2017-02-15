@@ -30,4 +30,5 @@ Mock.mock('/pm25', {
 
 // Mock.mock('/par', '@cparagraph')
 
-module.exports =  Mock
+// module.exports =  Mock
+export default Mock

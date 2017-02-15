@@ -6,8 +6,7 @@
   p(v-show="!products.length")
     i Please add some products to cart.
   ul 
-    li(v-for="p in products")
-      {{ p.title }} - {{ p.price | currency }} x {{ p.quantity }}
+    li(v-for="p in products") {{ p.title }} - {{ p.price | currency }} x {{ p.quantity }}
   p Total: {{ total | currency }}
   p 
     button(:disabled="!products.length", @click="checkout(products)") Checkout

@@ -89,3 +89,9 @@ alias = "/"
   title = "条纹"
   path = "linear-gradient"
   router = "mind/linear_gradient"
+
+  [[navs.child]]
+  name = "vuex"
+  title = "VUEX"
+  path = "VUEX"
+  router = "mind/vuex"

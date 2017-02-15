@@ -20,7 +20,7 @@ const actions = {
     commit(types.CHECKOUT_REQUEST)
     shop.buyProducts(
       products,
-      () => commit(types.CHECK_SUCCESS),
+      () => commit(types.CHECKOUT_SUCCESS),
       () => commit(types.CHECKOUT_FAILURE, { savedCartItems })
     )
   }

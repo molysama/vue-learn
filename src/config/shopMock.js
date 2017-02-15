@@ -11,7 +11,8 @@ Mock.setup({
   timeout: 300-500
 })
 
-Mock.mock('product/all', products)
-Mock.mock('product/buy', 'success')
+Mock.mock('/product/all', products)
+Mock.mock('/product/buy', 'success')
+Mock.mock('/product/add', [])
 
 export default Mock
