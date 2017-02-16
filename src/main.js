@@ -7,6 +7,12 @@ import App from './App'
 import mockTest from './config/mockTest'
 import shopMock from './config/shopMock'
 
+// element-ui 
+import { Button, col, row } from 'element-ui'
+Vue.use(Button)
+Vue.use(col)
+Vue.use(row)
+
 // vuex
 import store from './store'
 import { currency } from './currency'

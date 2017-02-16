@@ -46,6 +46,12 @@ redirect = "layout1"
   path = "layout3"
   router = "layout/layout3"
 
+  [[navs.child]]
+  name = "layout4"
+  title = "第四个布局"
+  path = "layout4"
+  router = "layout/layout4"
+
 [[navs]]
 name = "flex"
 title = "FLEX"
