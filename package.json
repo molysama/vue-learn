@@ -13,6 +13,7 @@
     "debug": "node --nolazy --debug-brk=5858 build/dev-server.js"
   },
   "dependencies": {
+    "aos": "^2.1.1",
     "axios": "^0.15.3",
     "mockjs": "^1.0.1-beta3",
     "node-sass": "^4.3.0",
@@ -21,8 +22,9 @@
     "stylus": "^0.54.5",
     "toml": "^2.3.1",
     "toml-loader": "^1.0.0",
-    "vue": "^2.1.0",
+    "vue": "^2.1.10",
     "vue-router": "^2.2.0",
+    "vue-template-compiler": "^2.1.10",
     "vuex": "^2.1.2"
   },
   "devDependencies": {
@@ -72,7 +74,7 @@
     "sinon-chai": "^2.8.0",
     "stylus-loader": "^2.4.0",
     "url-loader": "^0.5.7",
-    "vue-loader": "^10.0.0",
+    "vue-loader": "^10.3.0",
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.1.0",
     "webpack": "^1.13.2",

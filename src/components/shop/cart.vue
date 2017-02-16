@@ -22,6 +22,16 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     
+    /**
+        ...是es6语法，等同于:
+        
+        mapGetters(
+          products: 'cartProdcuts'
+        }),
+        mapGetters(
+          checkoutStatus: 'checkoutStatus
+        })
+     */
     ...mapGetters({
       products: 'cartProducts',
       checkoutStatus: 'checkoutStatus'

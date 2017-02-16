@@ -1,5 +1,5 @@
 
-<template lang="jade" >
+<template lang="pug" >
 
 .page-wrapper
   header
@@ -31,9 +31,12 @@
           .hr
           p.sub-heading Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         div.icon-group
-          span.icon item          
-          span.icon item          
-          span.icon item          
+          span.icon
+            i item          
+          span.icon
+            i item          
+          span.icon
+            i item          
     section.gray-section 
       .article-preview.clearfix
         .img-section
@@ -56,29 +59,38 @@
           h2 标题
           .sub-heading 副标题
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, accusamus, quisquam. Veniam hic itaque necessitatibus, qui. Provident voluptas minima, dolores, illum qui, dolorum commodi porro asperiores ducimus ipsam, beatae expedita.
-      section.purple-section
-        .heading-wrapper
-          h2 标题
-          div.sub-heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repudiandae, eligendi nesciunt dolore natus deleniti. Facilis eius mollitia, vitae culpa assumenda similique ex. Omnis ipsam adipisci beatae iste provident nulla!
-          .car-group.clearfix
-            .card
-              h3 小标题
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-            .card
-              h3 小标题
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-            .card
-              h3 小标题
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-            .card
-              h3 小标题
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-            .card
-              h3 小标题
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-            .card
-              h3 小标题
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+    section.purple-section
+      .heading-wrapper
+        h2 标题
+        div.sub-heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repudiandae, eligendi nesciunt dolore natus deleniti. Facilis eius mollitia, vitae culpa assumenda similique ex. Omnis ipsam adipisci beatae iste provident nulla!
+        .car-group.clearfix
+          .card(data-aos="fade-left")
+            h3 小标题
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+          .card(data-aos="fade-left")
+            h3 小标题
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+          .card(data-aos="fade-left")
+            h3 小标题
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+          .card(data-aos="fade-left")
+            h3 小标题
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+          .card(data-aos="fade-left")
+            h3 小标题
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+          .card(data-aos="fade-left")
+            h3 小标题
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
+            
+  footer  
+    ul.share-group
+      li item 
+      li item 
+      li item 
+      li item 
+      li item 
+    .copyright &copy MolySama
 
 
 
@@ -86,8 +98,16 @@
 </template>
 <style lang="stylus" scoped>
   
+.page-wrapper
+  background #444 url(../../assets/layout3/banner.jpg) 
+  background-attachment fixed // 背景图片不动
+  background-repeat no-repeat // 不重复
+  background-size cover
+  background-position center center
+header 
+  background rgba(0, 0, 0, 0.4)
 nav
-  background #ccc
+  background transparent
   height 50px
   li.logo 
     letter-spacing 1px
@@ -112,7 +132,7 @@ nav
         display inline-block
         height @height
 .banner 
-  background #777
+  background transparent
   height 700px
   button padding 14px 60px
   .inner 
@@ -161,6 +181,9 @@ button
       margin 20px
       transform rotate(45deg)
       border 1px solid #655
+      i 
+        display inline-block
+        transform rotate(-45deg) translate(-50%, 50%)
       
 .gray-section 
   background #655
@@ -222,10 +245,32 @@ p
   margin 20px auto 
   background #fff
 
+footer 
+  background #333
+  color #fff
+  min-height 150px
+  text-align center
+  ul.share-group 
+    display block 
+    width 100%
+    margin 0 auto
+    padding 50px 0 20px
+    li 
+      display inline-block
+      padding 10px
+  .copyright
+      padding-bottom 20px
+      
       
 
 
 </style>
 <script>
+
+// TODO: 整合aos动画库
+// import aos from '../../aos'
+export default {
+  
+}
   
 </script>
