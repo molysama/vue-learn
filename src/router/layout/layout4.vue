@@ -22,11 +22,11 @@
                 a 
                   i.fa.fa-lg.fa-facebook-f
         el-row.menu-row
-          el-col.logo-col(:sm="8", :xs="24")
+          el-col.logo-col(:md="8", :sm="8", :xs="24")
             .logo
               a MolySama
                 em .
-          el-col.menu-col(:xs="16")
+          el-col.menu-col(:md="16", :sm="16", :xs="24")
             ul 
               li
                 a Home
