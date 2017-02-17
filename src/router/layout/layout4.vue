@@ -47,7 +47,7 @@
           el-col.title.col(:span="24")
             .title
               h1 Your Business To the Next Level
-              h2 Free HTML5 Bootstrap Templates Made 
+              h2 HTML5 Templates, Power By Vue & Element-UI
               Layout4-button Get In Touch
     .green-section
       .container 
