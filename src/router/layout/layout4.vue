@@ -5,8 +5,8 @@
   .page
     nav 
       .container
-        el-row 
-          el-col(:span="24")
+        el-row.concact-row 
+          el-col.concact-col(:span="24")
             ul 
               li
                 a 
@@ -21,12 +21,12 @@
               li
                 a 
                   i.fa.fa-lg.fa-facebook-f
-        el-row
-          el-col(:sm="8", :xs="24")
+        el-row.menu-row
+          el-col.logo-col(:sm="8", :xs="24")
             .logo
               a MolySama
                 em .
-          el-col(:xs="16").nav-wrapper
+          el-col.menu-col(:xs="16")
             ul 
               li
                 a Home
@@ -43,12 +43,18 @@
                   
     header
       .container
-        el-row
-          el-col(:span="24")
+        el-row.title-row
+          el-col.title.col(:span="24")
             .title
               h1 Your Business To the Next Level
               h2 Free HTML5 Bootstrap Templates Made 
-              el-button(:plain="true", type="text") Get In Touch
+              Layout4-button Get In Touch
+    .green-section
+      .container 
+        .green-flex
+          Layout4-green.green
+          Layout4-green.green
+          Layout4-green.green
       
     .toTop
       a 
@@ -98,7 +104,7 @@ h1, h2, h3, h4, h5
           em 
             color themecolor
             padding-left 5px
-      .el-row:first-child .el-col
+      .concact-col
         text-align right
         ul 
           li
@@ -119,7 +125,7 @@ h1, h2, h3, h4, h5
                 transition-duration 0s
                 color themecolor
                 line-height 14px 
-      .nav-wrapper 
+      .menu-col 
         text-align right
         ul 
           li 
@@ -150,16 +156,28 @@ h1, h2, h3, h4, h5
         line-height 1.5
         margin-bottom 30px
       button 
-        color #fff
-        background none
-        transition 0.3s
-        padding 19px 30px
         font-size 18px
         font-weight 400
-        border 1px solid #fff
-        &:hover 
-          background #fff
-          color rgba(29, 43, 83, 1)
+
+.green-section 
+  position relative 
+  top -7em
+  .green-flex 
+    display flex 
+    flex-wrap wrap
+    position relative
+    float left
+    .green 
+      z-index 6
+      &:nth-child(3)
+        background darken(themecolor, 5)
+      &:nth-child(2)
+        background darken(themecolor, 2)
+        margin-bottom -60px
+        box-shadow 0 0 30px 10px rgba(0, 0, 0, 0.25)
+        z-index 7
+        position relative 
+        top -2em
       
 // 改变选中的div的样式
 ::selection
