@@ -23,6 +23,7 @@ boxcolor = #17B794
 iconcolor = #13977a
 
 .greenbox 
+  border-radius 1%
   box-sizing border-box
   width 33.33%
   float left
