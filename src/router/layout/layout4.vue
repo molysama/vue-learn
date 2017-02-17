@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5
   background #fff
   .page 
     position relative
-    overflow-x hidden
+    overflow hidden
     width 100%
     height 100%
     transition 0.5s
@@ -105,6 +105,7 @@ h1, h2, h3, h4, h5
             color themecolor
             padding-left 5px
       .concact-col
+        padding-top 20px
         text-align right
         ul 
           li
@@ -158,6 +159,8 @@ h1, h2, h3, h4, h5
       button 
         font-size 18px
         font-weight 400
+        &:hover 
+          border-color @background!important
 
 .green-section 
   position relative 
