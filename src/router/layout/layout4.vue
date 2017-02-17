@@ -53,8 +53,8 @@
       .container 
         .green-flex
           Layout4-green.green
-          Layout4-green.green
-          Layout4-green.green
+          Layout4-green(icon="flag").green
+          Layout4-green(icon="key").green
       
     .toTop
       a 

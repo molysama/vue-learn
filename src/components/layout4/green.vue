@@ -3,7 +3,7 @@
 
 .greenbox
   span.icon 
-    i.fa.fa-search
+    i.fa(:class="green_icon")
   .inner
     h3 Search
     p Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. 
@@ -64,5 +64,19 @@ iconcolor = #13977a
 
 </style>
 <script>
+
+export default {
+  data () {
+    return {
+      green_icon: 'fa-' + this.icon
+    }
+  },
+  props: {
+    icon: {
+      type: String,
+      default: 'search'
+    }
+  }
+}
   
 </script>
