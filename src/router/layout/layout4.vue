@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5
               font-weight bold
               margin-left 0px
               color rgba(255, 255, 255, 0.5)
-              padding 30px 10px
+              padding 0 10px
               cursor pointer
               transition-duration .2s
               &:hover 

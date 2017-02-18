@@ -13,7 +13,11 @@ export default {
     
     axios.post('/product/buy', products)
       .then(res => {
-        successHandle(res)
+        if (Math.random() > 0.5) {
+          successHandle(res)
+        } else {
+          errorHandle(res)
+        }
       })
       .catch(error => errorHandle(error))
   }
