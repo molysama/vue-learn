@@ -14,7 +14,7 @@ const routes = navs.map(route => {
 // 编译路由
 function createRoute(route) {
 
-  const result = _.pick(route, ['name', 'path', 'alias', 'redirect'])
+  const result = _.pick(route, ['name', 'path', 'alias', 'redirect', 'meta'])
   result.component = resolve => require(['../router/' + route.router], resolve)
 
   // 如果存在子路由
