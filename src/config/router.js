@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import _ from 'lodash/object'
 
 // 载入路由表配置
 import { navs } from './router_path.toml'
@@ -13,21 +14,8 @@ const routes = navs.map(route => {
 // 编译路由
 function createRoute(route) {
 
-  let result = {}
-  result.name = route.name
-  result.path = route.path
-  result.meta = route.meta || {}
+  const result = _.pick(route, ['name', 'path', 'alias', 'redirect'])
   result.component = resolve => require(['../router/' + route.router], resolve)
-
-  // 如果存在别名
-  if (route.alias) {
-    result.alias = route.alias
-  }
-
-  // 如果存在重定向, 为了逻辑清晰仅接受name参数
-  if (route.redirect) {
-    result.redirect = { name: route.redirect }
-  }
 
   // 如果存在子路由
   /*TODO: 警告 duplicate named routes definition
