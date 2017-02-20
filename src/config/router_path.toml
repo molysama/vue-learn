@@ -27,7 +27,8 @@ name = "layout"
 title = "Layout"
 path = "/layout"
 router = "layout/index"
-redirect = "layout1"
+  [navs.redirect]
+  name = "layout1"
   [[navs.child]]
   name = "layout1"
   title = "第一个布局"
