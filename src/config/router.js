@@ -19,9 +19,7 @@ function createRoute(route) {
 
   // 如果存在子路由
   if (route.child) {
-    result.children = route.child.map(child => {
-      return createRoute(child)
-    })
+    result.children = route.child.map(child => createRoute(child))
   }
 
   return result
