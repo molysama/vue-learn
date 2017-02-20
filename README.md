@@ -29,6 +29,7 @@ src/
 
 ## Features
 * vue
+* vuex
 * vue-router
 * stylus
 * pug
