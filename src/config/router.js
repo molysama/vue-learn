@@ -15,7 +15,7 @@ const routes = navs.map(route => {
 function createRoute(route) {
 
   const result = _.pick(route, ['name', 'path', 'alias', 'redirect', 'meta'])
-  result.component = resolve => require(['../router/' + route.router], resolve)
+  result.component = resolve => require(['../views/' + route.router], resolve)
 
   // 如果存在子路由
   if (route.child) {

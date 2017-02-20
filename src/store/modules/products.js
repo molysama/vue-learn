@@ -1,5 +1,5 @@
 
-import shop from '../shop.js'
+import shop from '../../api/shop.js'
 import * as types from '../mutation-types'
 
 const state = {

@@ -1,5 +1,5 @@
 
-import Mock from 'mockjs'
+import * as API from '../urls'
 
 const products = [
   {"id": 1, "title": "iPad 4 Mini", "price": 500.01, "inventory": 2},
@@ -7,12 +7,17 @@ const products = [
   {"id": 3, "title": "Charli XCX - Sucker CD", "price": 19.99, "inventory": 5}
 ]
 
-Mock.setup({
-  timeout: 300-500
-})
-
-Mock.mock('/product/all', products)
-Mock.mock('/product/buy', 'success')
-Mock.mock('/product/add', [])
-
-export default Mock
+export const shop = [
+  {
+    path: API.product_all,
+    data: products
+  },
+  {
+    path: API.product_buy,
+    data: 'success'
+  },
+  {
+    path: API.product_add,
+    data: []
+  }
+]

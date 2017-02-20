@@ -14,7 +14,7 @@
 # }
 
 
-# ROUTER_PATH = '../router/'
+# ROUTER_PATH = '../views`/'
 
 [[navs]]
 name = "vue"
@@ -33,19 +33,16 @@ redirect = "layout1"
   title = "第一个布局"
   path = "layout1"
   router = "layout/layout1"
-
   [[navs.child]]
   name = "layout2"
   title = "第二个布局"
   path = "layout2"
   router = "layout/layout2"
-
   [[navs.child]]
   name = "layout3"
   title = "第三个布局"
   path = "layout3"
   router = "layout/layout3"
-
   [[navs.child]]
   name = "layout4"
   title = "第四个布局"
@@ -73,31 +70,26 @@ router = "mind/index"
 alias = "/"
   [navs.redirect]
   name = "mind1"
-  
   [[navs.child]]
   name = "mind1"
   title = "日历"
   path = "mind1"
   router = "mind/mind_1"
-
   [[navs.child]]
   name = "shadow"
   title = "多重投影"
   path = "shadow"
   router = "mind/shadow"
-
   [[navs.child]]
   name = "girl"
   title = "GIRL"
   path = "girl"
   router = "mind/girl"
-
   [[navs.child]]
   name = "linear_gradient"
   title = "条纹"
   path = "linear-gradient"
   router = "mind/linear_gradient"
-
   [[navs.child]]
   name = "vuex"
   title = "VUEX"
