@@ -13,7 +13,6 @@
     "debug": "node --nolazy --debug-brk=5858 build/dev-server.js"
   },
   "dependencies": {
-    "aos": "^2.1.1",
     "axios": "^0.15.3",
     "element-ui": "^1.1.6",
     "lodash": "^4.17.4",

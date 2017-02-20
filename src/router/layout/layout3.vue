@@ -64,22 +64,7 @@
         h2 标题
         div.sub-heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repudiandae, eligendi nesciunt dolore natus deleniti. Facilis eius mollitia, vitae culpa assumenda similique ex. Omnis ipsam adipisci beatae iste provident nulla!
         .car-group.clearfix
-          .card(data-aos="fade-left")
-            h3 小标题
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-          .card(data-aos="fade-left")
-            h3 小标题
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-          .card(data-aos="fade-left")
-            h3 小标题
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-          .card(data-aos="fade-left")
-            h3 小标题
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-          .card(data-aos="fade-left")
-            h3 小标题
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
-          .card(data-aos="fade-left")
+          .card(v-for="n in 6")
             h3 小标题
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit, quaerat laboriosam commodi, voluptatum ipsam architecto, ea voluptas at aut aspernatur debitis tempore dolores facere. Ducimus maxime magnam reprehenderit deserunt.
             
@@ -267,10 +252,8 @@ footer
 </style>
 <script>
 
-// TODO: 整合aos动画库
-// import aos from '../../aos'
 export default {
-  
+
 }
   
 </script>

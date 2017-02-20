@@ -49,7 +49,7 @@
               h1 Your Business To the Next Level
               h2 HTML5 Templates, Power By Vue & Element-UI
               Layout4-button Get In Touch
-    .green-section
+    .green-section(id="aa")
       .container 
         .green-flex
           Layout4-green.green
@@ -57,8 +57,8 @@
           Layout4-green(icon="key").green
       
     .toTop
-      a 
-        i.fa.fa-lg.fa-long-arrow-up
+      a {{ aHeight }}
+        // i.fa.fa-lg.fa-long-arrow-up
 
 
   
@@ -229,5 +229,22 @@ h1, h2, h3, h4, h5
   
 </style>
 <script>
+
+export default {
+  data () {
+    return {
+      aHeight: 0
+    }
+  },
+  methods: {
+    scroll () {
+      this.aHeight = document.getElementById('aa').offsetTop - document.body.scrollTop
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.scroll)
+  }
+
+}
   
 </script>
