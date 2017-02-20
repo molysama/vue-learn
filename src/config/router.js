@@ -7,9 +7,7 @@ import { navs } from './router_path.toml'
 
 Vue.use(VueRouter)
 
-const routes = navs.map(route => {
-  return createRoute(route)
-})
+const routes = navs.map(route => createRoute(route))
 
 // 编译路由
 function createRoute(route) {
