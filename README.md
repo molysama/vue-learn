@@ -38,6 +38,7 @@ src/
 * pug
 * axios
 * mockjs
+* element-UI
 
 ## License
 Mit
