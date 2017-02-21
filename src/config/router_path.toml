@@ -14,7 +14,7 @@
 # }
 
 
-# ROUTER_PATH = '../views`/'
+# ROUTER_PATH = '../views/'
 
 [[navs]]
 name = "vue"

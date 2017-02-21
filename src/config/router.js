@@ -7,7 +7,7 @@ import { navs } from './router_path.toml'
 
 Vue.use(VueRouter)
 
-const routes = navs.map(route => createRoute(route))
+const routes = navs.map(createRoute)
 
 // 编译路由
 function createRoute(route) {
@@ -17,7 +17,7 @@ function createRoute(route) {
 
   // 如果存在子路由
   if (route.child) {
-    result.children = route.child.map(child => createRoute(child))
+    result.children = route.child.map(createRoute)
   }
 
   return result
