@@ -1,4 +1,8 @@
 
+width = 150px
+height = 46px
+arrowSize = 5px
+aWidth = width*0.8
 
   // 主菜单
   ul
@@ -35,36 +39,34 @@
       
   
   li
-    position relative
+    // position relative
     background #efefef
     &:hover
       background #fff
       >ul
         display block
     ul // 子菜单
-      width 150px
+      width width
       padding-left 10px
       display none
       position absolute
-      top 0
-      left 100%
+      margin -1*height 0 0 width
+      // top 0
+      // left 100%
       li 
         &:first-child
           border-top-left-radius 3px
           border-right-color #efefef
           &:before // 小箭头
-            size = 5px
             color #efefef
             position absolute
             content ""
             width 0
             height 0
-            top 50%
-            right 100%
-            margin-top size * -1
-            border-top size solid transparent
-            border-bottom size solid transparent 
-            border-right:size solid @color
+            margin 0.5*height 0 0 -1*arrowSize
+            border-top arrowSize solid transparent
+            border-bottom arrowSize solid transparent 
+            border-right:arrowSize solid @color
             border-right-color inherit
         &:last-child
           border-bottom-left-radius 3px
@@ -73,7 +75,7 @@
           border-right-color #fff
   a
     display inline-block
-    width 120px
+    width aWidth
     padding 8px 15px
     cursor pointer
     color #483430
