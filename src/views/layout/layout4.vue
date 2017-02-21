@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5
             color themecolor
             padding-left 5px
       .concact-col
-        padding-top 20px
+        padding 20px 0
         text-align right
         ul 
           li
