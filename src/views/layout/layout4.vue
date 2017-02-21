@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5
             display inline-block
             a 
               font-size 16px
-              padding 30px 10px
+              padding 0 10px
               color rgba(255, 255, 255, 0.5)
               transition 0.5s
               cursor pointer
