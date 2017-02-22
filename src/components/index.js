@@ -5,7 +5,7 @@
 // 例子2  src/components/Hello.vue, <Hello>
 
 import Vue from 'vue'
-const requireContext = require.context('../components', true, /.*\.vue$/)
+const requireContext = require.context('components', true, /.*\.vue$/)
 
 const components = requireContext.keys().map(key => {
   Vue.component(rename(key), requireContext(key))

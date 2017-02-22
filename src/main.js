@@ -17,8 +17,8 @@ import store from './store'
 import { currency } from './currency'
 Vue.filter('currency', currency)
 
-import components from './config/load_components'
-import router from './config/router'
+import components from './components'
+import router from './router'
 
 // 创建根实例
 new Vue({

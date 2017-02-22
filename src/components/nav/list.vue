@@ -8,7 +8,6 @@
 </template>
 <script>
 
-import {navs} from '../../config/router_path.toml'
 export default {
 
   data () {
