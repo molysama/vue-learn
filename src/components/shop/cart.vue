@@ -21,17 +21,7 @@ import { mapGetters } from 'vuex'
 //TODO: 开始分析dispatch、mapGetters等代码
 export default {
   computed: {
-    
-    /**
-        ...是es6语法，等同于:
-        
-        mapGetters(
-          products: 'cartProdcuts'
-        }),
-        mapGetters(
-          checkoutStatus: 'checkoutStatus
-        })
-     */
+  
     ...mapGetters({
       products: 'cartProducts',
       checkoutStatus: 'checkoutStatus'
